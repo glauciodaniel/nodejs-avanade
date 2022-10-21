@@ -40,6 +40,15 @@ if (process.argv[2]) {
     default:
       console.log("Invalid command");
   }
+
+  folders.forEach((folder) => {
+    if (!fs.existsSync(folder)) {
+      fs.mkdirSync(folder);
+      console.log("Pasta: ", folder, " criado.");
+    } else {
+      console.log("Pasta: ", folder, " já existe.");
+    }
+  });
 }
 /*
 const dir = "./upload";
