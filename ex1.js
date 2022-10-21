@@ -3,6 +3,9 @@
 import fs from "fs";
 const dir = "./upload";
 
+//Todas as funções Sync são bloqueantes
+// Prefira utilizar as funções Async
+
 if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
   console.log(`Criando diretório: ${dir}`);

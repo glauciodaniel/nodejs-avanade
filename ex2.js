@@ -1,5 +1,4 @@
 import fs from "fs";
-
 const dir = "./upload";
 const file = "lakers.txt";
 const path = `${dir}/${file}`;
